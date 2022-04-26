@@ -37,3 +37,29 @@ app.get('/explorers',(req,res)=>{
 res.send(explorer)
 
 })
+app.get('/explorern',(req,res)=>{
+
+	const explorer={name:"Explorer", msg:"Hola daniel aca andamos"}
+		res.send(explorer)
+})
+
+//query params: recibir parametros por url
+//http://localhost:3000/explorers/daniel
+//req.params = {"explorerName":"Daniel"}
+app.get('/explorers/:explorerName',(req,res)=>{
+		
+	res.send(req.params)
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
