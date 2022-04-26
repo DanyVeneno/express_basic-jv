@@ -25,5 +25,15 @@ app.get('/launchx',(req,res)=>{
 
 	res.send('aca estoy hello world')
 
+})
+app.get('/explorersInNode',(req,res)=>{
+
+	res.send('Aca estoy explorers')
+
+})
+app.get('/explorers',(req,res)=>{
+
+	const explorer = {nasme:"Explorer1", msg:"Hello MC Carlo"}
+res.send(explorer)
 
 })
